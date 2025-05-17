@@ -1,0 +1,123 @@
+body {
+    overflow-x: hidden;
+    background-color: #000;
+    background-image: url('../img/bg-graffiti.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+}
+
+.layout-row {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.sidebar {
+    background-color: #111;
+    padding: 2rem 1rem;
+    transition: width 0.3s ease;
+    width: 240px;
+}
+
+.sidebar.collapsed {
+    width: 80px !important;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.sidebar h4,
+.sidebar .nav-link span {
+    transition: opacity 0.2s ease;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.sidebar.collapsed .menu-title,
+.sidebar.collapsed .nav-link span {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar .nav-link i {
+    width: 1.5rem;
+    text-align: center;
+}
+
+.toggle-icon {
+    cursor: pointer;
+}
+
+@keyframes wobble {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(15deg); }
+    50% { transform: rotate(-15deg); }
+    75% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.wobble {
+    animation: wobble 0.5s ease;
+}
+
+#mainContent {
+    flex: 1 1 auto;
+    padding-top: 2rem;
+    background-color: transparent;
+}
+
+#mainContent h1 {
+    font-size: 2rem;
+}
+
+#dreamPanel {
+    flex: 0 0 20%;
+    max-width: 20%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+    #dreamPanel {
+    display: none;
+    }
+
+    .sidebar {
+    width: 80px !important;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    }
+
+    .sidebar .menu-title,
+    .sidebar .nav-link span {
+    opacity: 0;
+    pointer-events: none;
+    }
+}
+
+.timeline-vertical {
+    border-left: 4px solid #fff;
+    margin-left: 30px;
+    padding-left: 20px;
+}
+
+.timeline-event {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.timeline-event::before {
+    content: '';
+    position: absolute;
+    left: -32px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background-color: currentColor;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+.timeline-event .badge {
+    font-size: 0.85rem;
+}
