@@ -10,3 +10,41 @@ body {
   font-family: sans-serif;
   background-color: #0f0f0f; /* fallback */
 }
+
+
+/* ButtonS */
+
+@font-face {
+  font-family: 'YouMurderer';
+  src: url('/fonts/youmurderer-bb.regular.ttf') format('truetype');
+}
+
+.ghost-title {
+  font-family: 'YouMurderer', cursive !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-7deg) scale(2);
+  animation: cursedFlicker 1.5s infinite;
+  pointer-events: none;
+  z-index: 50;
+  white-space: nowrap;
+  font-size: 4rem;
+  letter-spacing: 3px;
+  text-shadow: 0 0 8px rgba(255, 0, 0, 0.8);
+}
+
+.horror-hover:hover {
+  animation: horrorPulse 0.4s infinite alternate;
+}
+
+@keyframes cursedFlicker {
+  0%, 100% { color: rgba(255, 255, 255, 0.1); }
+  50% { color: rgba(0, 0, 0, 0.6); }
+}
+
+@keyframes horrorPulse {
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  50% { transform: scale(1.05) rotate(1deg); }
+}
+

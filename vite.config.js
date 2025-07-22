@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
-  base: '/my-dreams/', // ✅ this fixes asset paths for GitHub Pages
+  base: '/',  // Normal base path for local dev
   plugins: [
     react(),
     tailwindcss()

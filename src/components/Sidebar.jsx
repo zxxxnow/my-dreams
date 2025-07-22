@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMusic, faMicrophone, faVideo, faCamera, faRoad } from '@fortawesome/free-solid-svg-icons';
+import { faMusic, faMicrophone, faVideo, faCamera, faRoad, faGlobe, faChartBar } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
-
 
 function Sidebar({ isMobile, mobileSidebarOpen, setMobileSidebarOpen, desktopSidebarOpen, setDesktopSidebarOpen }) {
   const menuItems = [
@@ -9,7 +8,9 @@ function Sidebar({ isMobile, mobileSidebarOpen, setMobileSidebarOpen, desktopSid
     { icon: faMusic, label: 'Songs', path: '/songs' },
     { icon: faMicrophone, label: 'Karaokes', path: '/karaokes' },
     { icon: faVideo, label: 'Clips', path: '/clips' },
-    { icon: faCamera, label: 'Photos', path: '/photos' }
+    { icon: faCamera, label: 'Photos', path: '/photos' },
+    { icon: faGlobe, label: 'World Map', path: '/worldmap' },
+    { icon: faChartBar, label: 'Charts', path: '/charts' },
   ];
 
   return (
@@ -48,7 +49,9 @@ function Sidebar({ isMobile, mobileSidebarOpen, setMobileSidebarOpen, desktopSid
                 onClick={() => setMobileSidebarOpen(false)}
                 className="flex items-center gap-3 px-3 py-2 rounded hover:bg-gray-700 transition">
                 <FontAwesomeIcon icon={item.icon} className="text-white" />
-                <span className={`${desktopSidebarOpen ? 'inline' : 'hidden'} transition-all duration-300`}>{item.label}</span>
+                <span className={`${desktopSidebarOpen ? 'inline' : 'hidden'} transition-all duration-300`}>
+                  {item.label}
+                </span>
               </Link>
             </li>
           ))}
@@ -77,12 +80,14 @@ function Sidebar({ isMobile, mobileSidebarOpen, setMobileSidebarOpen, desktopSid
           <ul className="space-y-1">
             {menuItems.map((item, i) => (
               <li key={i}>
-                <a href="#"
+                <Link
+                  to={item.path}
                   onClick={() => setMobileSidebarOpen(false)}
-                  className="flex items-center gap-3 px-3 py-2 rounded hover:bg-gray-700 transition">
+                  className="flex items-center gap-3 px-3 py-2 rounded hover:bg-gray-700 transition"
+                >
                   <FontAwesomeIcon icon={item.icon} className="text-white" />
                   <span>{item.label}</span>
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
