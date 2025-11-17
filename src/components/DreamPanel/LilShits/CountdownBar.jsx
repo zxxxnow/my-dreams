@@ -15,8 +15,15 @@ function CountdownBar() {
         </div>
       </div>
       <p className="text-sm text-center">
-        Day {daysSinceExileStart} / {totalExileDays} — {exilePercentage}% Complete
+        Deadline Finished
       </p>
+
+      {/* Success Box */}
+      <div className="mt-4 p-3 bg-green-700 border border-green-500 rounded-lg text-center">
+        <p className="text-sm font-medium">
+          Completed Sunday 2nd at 6 - 7 pm SF time
+        </p>
+      </div>
     </div>
   );
 }

@@ -27,7 +27,7 @@ body {
   transform: translate(-50%, -50%) rotate(-7deg) scale(2);
   animation: cursedFlicker 1.5s infinite;
   pointer-events: none;
-  z-index: 50;
+  z-index: 39;
   white-space: nowrap;
   font-size: 4rem;
   letter-spacing: 3px;

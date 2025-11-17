@@ -19,7 +19,17 @@ function Sidebar({ isMobile, mobileSidebarOpen, setMobileSidebarOpen, desktopSid
       <span
         title="Toggle Menu"
         onClick={() => setMobileSidebarOpen(true)}
-        className="fixed top-4 left-4 z-50 text-xl cursor-pointer p-2 rounded bg-gray-900 md:hidden"
+        className="
+          fixed top-4 left-4 z-50 md:hidden
+          inline-flex items-center justify-center
+          h-12 w-12 rounded-2xl
+          bg-gradient-to-br from-fuchsia-600 via-violet-700 to-indigo-800
+          border border-white/10 ring-1 ring-white/10
+          shadow-[0_10px_20px_rgba(0,0,0,0.45)]
+          backdrop-blur-sm
+          hover:scale-105 active:scale-95 transition-transform
+          text-2xl leading-none select-none
+        "
       >
         🍔
       </span>

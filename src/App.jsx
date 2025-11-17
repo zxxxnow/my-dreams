@@ -23,15 +23,7 @@ function App() {
 
   return (
     <div className="flex flex-row min-h-screen text-white">
-      {/* Mobile hamburger */}
-      <span
-        title="Toggle Menu"
-        onClick={() => setMobileSidebarOpen(true)}
-        className="fixed top-4 left-4 z-50 text-xl cursor-pointer p-2 rounded bg-gray-900 md:hidden"
-      >
-        🍔
-      </span>
-
+      
       {/* Sidebar */}
       <Sidebar
         isMobile={isMobile}
