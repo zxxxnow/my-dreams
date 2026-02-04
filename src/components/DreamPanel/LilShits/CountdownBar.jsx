@@ -21,7 +21,7 @@ function CountdownBar() {
       {/* Success Box */}
       <div className="mt-4 p-3 bg-green-700 border border-green-500 rounded-lg text-center">
         <p className="text-sm font-medium">
-          Completed Sunday 2nd at 6 - 7 pm SF time
+          Completed on 2025 November Sunday 2nd at 6 - 7 pm SF time
         </p>
       </div>
     </div>
