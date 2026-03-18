@@ -135,7 +135,7 @@ export default function WorldMap() {
           </div>
           <div className="flex items-center gap-1">
             <div className="w-3 h-3 bg-[#F87171] rounded-sm" />
-            <span>Mixed but leaning Red</span>
+            <span>Mixed but leaning Red </span>
           </div>
           <div className="flex items-center gap-1">
             <div className="w-3 h-3 bg-[#3B82F6] rounded-sm" />
@@ -149,11 +149,11 @@ export default function WorldMap() {
                   "repeating-linear-gradient(45deg, #EF4444 0, #EF4444 3px, #3B82F6 3px, #3B82F6 6px)",
               }}
             />
-            <span>Conflict</span>
+            <span>Conflict -Waging war-</span>
           </div>
           <div className="flex items-center gap-1">
             <div className="w-3 h-3 bg-[#4c0099] rounded-sm" />
-            <span>Horrors whispers</span>
+            <span>Horrors whispers, the curse is stronger</span>
           </div> 
         </div>
 

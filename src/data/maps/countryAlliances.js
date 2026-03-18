@@ -13,6 +13,8 @@ function normalizePowerIndex(x) {
 export const countryAlliances = {
   // --- Blue ---
   "840": { name: "United States", allegiance: "blue", powerIndex: normalizePowerIndex(gfpRaw["840"].gfp) },
+  // under usa influence
+  "862": { name: "Venezuela", allegiance: "blue", powerIndex: normalizePowerIndex(gfpRaw["862"].gfp) },
   "328": { name: "Guyana", allegiance: "blue", powerIndex: 20 },
   "392": { name: "Japan", allegiance: "blue", powerIndex: normalizePowerIndex(gfpRaw["392"].gfp) },
   "702": { name: "Singapore", allegiance: "blue", powerIndex: normalizePowerIndex(gfpRaw["702"].gfp) },
@@ -44,7 +46,7 @@ export const countryAlliances = {
   "724": { name: "Spain", allegiance: "ultraviolence", powerIndex: normalizePowerIndex(gfpRaw["724"].gfp) },
   "826": { name: "United Kingdom", allegiance: "ultraviolence", powerIndex: normalizePowerIndex(gfpRaw["826"].gfp) },
   "275": { name: "Palestine", allegiance: "ultraviolence", powerIndex: normalizePowerIndex(gfpRaw["275"]?.gfp || 4) },  
-  "862": { name: "Venezuela", allegiance: "ultraviolence", powerIndex: normalizePowerIndex(gfpRaw["862"].gfp) },
+
   "804": { name: "Ukraine", allegiance: "ultraviolence", powerIndex: normalizePowerIndex(gfpRaw["804"]?.gfp || 4) },
 
   // --- Red ---

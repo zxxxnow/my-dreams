@@ -27,7 +27,7 @@ const stateColors = {
   "Missouri": "#EF4444",
   "Montana": "#EF4444",
   "Nebraska": "#EF4444",
-  "Nevada": "#EF4444",
+  "Nevada": "url(#blueRedStripe)",
   "New Hampshire": "#EF4444",
   "New Jersey": "#3B82F6",
   "New Mexico": "#4c0099",
