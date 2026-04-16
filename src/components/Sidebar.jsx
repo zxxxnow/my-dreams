@@ -1,14 +1,12 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMusic, faMicrophone, faVideo, faCamera, faRoad, faGlobe, faChartBar } from '@fortawesome/free-solid-svg-icons';
+import { faMusic, faRoad, faGlobe, faChartBar, faSkull } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
 function Sidebar({ isMobile, mobileSidebarOpen, setMobileSidebarOpen, desktopSidebarOpen, setDesktopSidebarOpen }) {
   const menuItems = [
     { icon: faRoad, label: 'Timeline', path: '/' },
     { icon: faMusic, label: 'Songs', path: '/songs' },
-    { icon: faMicrophone, label: 'Karaokes', path: '/karaokes' },
-    { icon: faVideo, label: 'Clips', path: '/clips' },
-    { icon: faCamera, label: 'Photos', path: '/photos' },
+    { icon: faSkull, label: 'Curses', path: '/curses' },
     { icon: faGlobe, label: 'World Map', path: '/worldmap' },
     { icon: faChartBar, label: 'Charts', path: '/charts' },
   ];
@@ -51,13 +49,15 @@ function Sidebar({ isMobile, mobileSidebarOpen, setMobileSidebarOpen, desktopSid
             Lil Dream Menu
           </span>
         </h4>
+
         <ul className="space-y-1">
           {menuItems.map((item, i) => (
             <li key={i}>
               <Link 
                 to={item.path}
                 onClick={() => setMobileSidebarOpen(false)}
-                className="flex items-center gap-3 px-3 py-2 rounded hover:bg-gray-700 transition">
+                className="flex items-center gap-3 px-3 py-2 rounded hover:bg-gray-700 transition"
+              >
                 <FontAwesomeIcon icon={item.icon} className="text-white" />
                 <span className={`${desktopSidebarOpen ? 'inline' : 'hidden'} transition-all duration-300`}>
                   {item.label}
@@ -87,6 +87,7 @@ function Sidebar({ isMobile, mobileSidebarOpen, setMobileSidebarOpen, desktopSid
             </span>
             <span className="font-semibold text-lg">Lil Dream Menu</span>
           </h4>
+
           <ul className="space-y-1">
             {menuItems.map((item, i) => (
               <li key={i}>
@@ -104,7 +105,7 @@ function Sidebar({ isMobile, mobileSidebarOpen, setMobileSidebarOpen, desktopSid
         </aside>
       )}
 
-      {/* Mobile Overlay Background */}
+      {/* Mobile Overlay */}
       {mobileSidebarOpen && (
         <div
           className="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden"

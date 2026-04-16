@@ -9,12 +9,12 @@ import DreamPanel from './components/DreamPanel/DreamPanel';
 
 // Placeholder components
 import SongsList from './components/Songs/SongList';
+import Curses from './components/Curses/Curses';
 import WorldMap from './components/WorldMap/WorldMap';
 import Charts from './components/Charts/Charts';
 import NotFound from './components/NotFound';
-const Karaokes = () => <div>🎤 Karaokes List</div>;
-const Clips = () => <div>🎬 Video Clips</div>;
-const Photos = () => <div>📸 Photos Gallery</div>;
+import Easy from './components/Songs/Songs/Easy';
+import RED from './components/Songs/Songs/RED';
 
 function App() {
   const isMobile = window.innerWidth < 768;
@@ -47,9 +47,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Timeline />} />
           <Route path="/songs" element={<SongsList />} />
-          <Route path="/karaokes" element={<Karaokes />} />
-          <Route path="/clips" element={<Clips />} />
-          <Route path="/photos" element={<Photos />} />
+            <Route path="/songs/easy" element={<Easy />} />
+            <Route path="/songs/red" element={<RED />} />
+          <Route path="/curses" element={<Curses />} />
           <Route path="/worldmap" element={<WorldMap />} />
           <Route path="/charts" element={<Charts />} />
           

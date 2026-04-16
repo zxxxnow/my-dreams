@@ -21,11 +21,11 @@ export const countryAlliances = {
   "376": { name: "Israel", allegiance: "blue", powerIndex: normalizePowerIndex(gfpRaw["376"].gfp) },
   "410": { name: "South Korea", allegiance: "blue", powerIndex: normalizePowerIndex(gfpRaw["410"].gfp) },
 
-  // --- Fractured (red with blue undertones) ---
-  "124": { name: "Canada", allegiance: "fractured", powerIndex: normalizePowerIndex(gfpRaw["124"].gfp) },
-  "032": { name: "Argentina", allegiance: "fractured", powerIndex: normalizePowerIndex(gfpRaw["032"].gfp), notes: "Economic collapse, inflation and debt; political swings between U.S.-aligned and China-linked policies; social unrest and strikes; institutions still intact but cracks widening"},
 
-  // --- Conflict (under siege) ---
+  // --- Conflict (Violence) ---
+  
+  "124": { name: "Canada", allegiance: "conflict", powerIndex: normalizePowerIndex(gfpRaw["124"].gfp) },
+  "032": { name: "Argentina", allegiance: "conflict", powerIndex: normalizePowerIndex(gfpRaw["032"].gfp), notes: "Economic collapse, inflation and debt; political swings between U.S.-aligned and China-linked policies; social unrest and strikes; institutions still intact but cracks widening"},
   "250": { name: "France", allegiance: "conflict", powerIndex: normalizePowerIndex(gfpRaw["250"].gfp) },
   "056": { name: "Belgium", allegiance: "conflict", powerIndex: normalizePowerIndex(gfpRaw["056"].gfp) },
   "360": { name: "Indonesia", allegiance: "conflict", powerIndex: normalizePowerIndex(gfpRaw["360"].gfp) },
@@ -41,33 +41,41 @@ export const countryAlliances = {
   "752": { name: "Sweden", allegiance: "conflict", powerIndex: normalizePowerIndex(gfpRaw["752"]?.gfp || 4) },
   "484": { name: "Mexico", allegiance: "conflict", powerIndex: normalizePowerIndex(gfpRaw["484"].gfp) },
 
-  // --- Death (im drinking from this countries blood) ---
+  // --- Death (im drinking from this countries blood/ total war :)) ---
   "170": { name: "Colombia", allegiance: "ultraviolence", powerIndex: normalizePowerIndex(gfpRaw["170"].gfp), notes: "ELN/FARC dissident surge; mass displacement and human-rights abuses; rising China economic ties; high instability"},
   "724": { name: "Spain", allegiance: "ultraviolence", powerIndex: normalizePowerIndex(gfpRaw["724"].gfp) },
   "826": { name: "United Kingdom", allegiance: "ultraviolence", powerIndex: normalizePowerIndex(gfpRaw["826"].gfp) },
   "275": { name: "Palestine", allegiance: "ultraviolence", powerIndex: normalizePowerIndex(gfpRaw["275"]?.gfp || 4) },  
 
   "804": { name: "Ukraine", allegiance: "ultraviolence", powerIndex: normalizePowerIndex(gfpRaw["804"]?.gfp || 4) },
+  "682": { name: "Saudi Arabia", allegiance: "ultraviolence", powerIndex: normalizePowerIndex(gfpRaw["682"].gfp) },
+  "400": { name: "Jordan", allegiance: "ultraviolence", powerIndex: normalizePowerIndex(gfpRaw["400"].gfp) },
+  "792": { name: "Turkey", allegiance: "ultraviolence", powerIndex: normalizePowerIndex(gfpRaw["792"].gfp) },
+  "818": { name: "Egypt", allegiance: "ultraviolence", powerIndex: normalizePowerIndex(gfpRaw["818"].gfp) },
+  "887": { name: "Yemen", allegiance: "ultraviolence", powerIndex: normalizePowerIndex(gfpRaw["887"].gfp) },
+  "512": { name: "Oman", allegiance: "ultraviolence", powerIndex: normalizePowerIndex(gfpRaw["512"].gfp) },
+  "887": { name: "Yemen", allegiance: "ultraviolence", powerIndex: normalizePowerIndex(gfpRaw["887"].gfp) },
+  "784": { name: "United Arab Emirates", allegiance: "ultraviolence", powerIndex: normalizePowerIndex(gfpRaw["784"].gfp) },  
+  "586": { name: "Pakistan", allegiance: "ultraviolence", powerIndex: normalizePowerIndex(gfpRaw["586"].gfp) }, 
 
-  // --- Red ---
-  "364": { name: "Iran", allegiance: "red", powerIndex: normalizePowerIndex(gfpRaw["364"].gfp) },
+  // --- Red (fuck them) ---
+  "364": { name: "Iran", allegiance: "ultraviolence", powerIndex: normalizePowerIndex(gfpRaw["364"].gfp) },
   "643": { name: "Russia", allegiance: "red", powerIndex: normalizePowerIndex(gfpRaw["643"].gfp) },
   "156": { name: "China", allegiance: "red", powerIndex: normalizePowerIndex(gfpRaw["156"].gfp) },
   "408": { name: "North Korea", allegiance: "red", powerIndex: normalizePowerIndex(gfpRaw["408"].gfp) },
-  "414": { name: "Kuwait", allegiance: "red", powerIndex: normalizePowerIndex(gfpRaw["414"].gfp) },
-  "634": { name: "Qatar", allegiance: "red", powerIndex: normalizePowerIndex(gfpRaw["634"].gfp) },
-  "368": { name: "Iraq", allegiance: "red", powerIndex: normalizePowerIndex(gfpRaw["368"].gfp) },
-  "422": { name: "Lebanon", allegiance: "red", powerIndex: normalizePowerIndex(gfpRaw["422"].gfp) },
-  "760": { name: "Syria", allegiance: "red", powerIndex: normalizePowerIndex(gfpRaw["760"].gfp) },
-  "076": { name: "Brazil", allegiance: "red",powerIndex: normalizePowerIndex(gfpRaw["076"].gfp), notes: "BRICS core, no USA pledge"},
-  "068": { name: "Bolivia", allegiance: "red", powerIndex: normalizePowerIndex(gfpRaw["068"].gfp), notes: "MAS collapse; protests over Morales exclusion; political polarization and instability"},
+  "414": { name: "Kuwait", allegiance: "ultraviolence", powerIndex: normalizePowerIndex(gfpRaw["414"].gfp) },
+  "634": { name: "Qatar", allegiance: "ultraviolence", powerIndex: normalizePowerIndex(gfpRaw["634"].gfp) },
+  "368": { name: "Iraq", allegiance: "ultraviolence", powerIndex: normalizePowerIndex(gfpRaw["368"].gfp) },
+  "422": { name: "Lebanon", allegiance: "ultraviolence", powerIndex: normalizePowerIndex(gfpRaw["422"].gfp) },
+  "760": { name: "Syria", allegiance: "ultraviolence", powerIndex: normalizePowerIndex(gfpRaw["760"].gfp) },
+  "076": { name: "Brazil", allegiance: "ultraviolence",powerIndex: normalizePowerIndex(gfpRaw["076"].gfp), notes: "BRICS core, no USA pledge"},
+  "068": { name: "Bolivia", allegiance: "ultraviolence", powerIndex: normalizePowerIndex(gfpRaw["068"].gfp), notes: "MAS collapse; protests over Morales exclusion; political polarization and instability"},
 
 
   // --- Neutral ---
   "740": { name: "Suriname", allegiance: "neutral", powerIndex: 18 },
-  "356": { name: "India", allegiance: "neutral", powerIndex: normalizePowerIndex(gfpRaw["356"].gfp) },
+  "356": { name: "India", allegiance: "ultraviolence", powerIndex: normalizePowerIndex(gfpRaw["356"].gfp) },
   "710": { name: "South Africa", allegiance: "neutral", powerIndex: normalizePowerIndex(gfpRaw["710"].gfp) },
-  "682": { name: "Saudi Arabia", allegiance: "neutral", powerIndex: normalizePowerIndex(gfpRaw["682"].gfp) },
 };
 
 // Centralized colors
@@ -76,6 +84,5 @@ export const allegianceColors = {
   red:  "#EF4444",
   neutral: "#cccccc",
   conflict: "url(#blueRedStripe)",
-  fractured: "url(#fracturedStripe)", 
   ultraviolence: "#4c0099", // solid dark purple
 };
